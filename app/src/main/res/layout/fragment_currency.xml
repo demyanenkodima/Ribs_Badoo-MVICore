@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <com.elyeproj.loaderviewlibrary.LoaderTextView
+        android:id="@+id/txtCurrency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="50dp"
+        app:corners="16"
+        app:width_weight="0.9" />
+
+    <com.elyeproj.loaderviewlibrary.LoaderTextView
+        android:id="@+id/txtBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtCurrency"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="18dp"
+        app:corners="16"
+        app:width_weight="0.9" />
+
+
+    <EditText
+        android:id="@+id/etxtMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:hint="0.00"
+        android:inputType="numberDecimal"
+        android:maxLength="7"
+        android:textColor="@color/black"
+        android:textSize="50dp" />
+
+    <com.elyeproj.loaderviewlibrary.LoaderTextView
+        android:id="@+id/txtRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etxtMoney"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="18dp"
+        app:corners="16"
+        app:width_weight="0.9" />
+
+</RelativeLayout>
